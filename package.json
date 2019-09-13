@@ -2,8 +2,9 @@
   "name": "ts-lib-starter",
   "version": "0.0.1",
   "description": "Start Node.js module with TypeScript",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/main/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/types/index.d.ts",
   "files": [
     "lib/**/*"
   ],
@@ -11,7 +12,8 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "build": "rimraf lib && tsc -p tsconfig.build.json",
+    "build": "rimraf lib/main && tsc -p tsconfig.build.json",
+    "build:es6": "rimraf lib/module && tsc -p tsconfig.build.es6.json",
     "lint": "eslint \"{src,test,examples,demo}/**/*.{ts,js}\" --fix",
     "test": "jest"
   },

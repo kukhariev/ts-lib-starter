@@ -2,7 +2,7 @@
   "compileOnSave": true,
   "compilerOptions": {
     "module": "commonjs",
-    "outDir": "./lib",
+    "outDir": "./lib/main",
     "baseUrl": "src",
     "target": "es2017",
     "moduleResolution": "node",
@@ -22,7 +22,8 @@
     "stripInternal": true,
     "keyofStringsOnly": true,
     "strictFunctionTypes": true,
-    "strictPropertyInitialization": true
+    "strictPropertyInitialization": true,
+    "declarationDir": "./lib/types"
   },
   "include": ["src", "test", "examples", "demo"]
 }
