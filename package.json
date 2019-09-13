@@ -1,0 +1,40 @@
+{
+  "name": "ts-lib-starter",
+  "version": "0.0.1",
+  "description": "Start Node.js module with TypeScript",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "build": "rimraf lib && tsc -p tsconfig.build.json",
+    "lint": "eslint \"{src,test,examples,demo}/**/*.{ts,js}\" --fix",
+    "test": "jest"
+  },
+  "author": {
+    "name": "kukhariev",
+    "email": "q_h@inbox.ru"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.7.5",
+    "@types/rimraf": "^2.0.2",
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
+    "@types/jest": "^24.0.18",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^24.1.0",
+    "ts-node-dev": "^1.0.0-pre.40",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {}
+}
