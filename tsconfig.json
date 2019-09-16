@@ -23,7 +23,9 @@
     "keyofStringsOnly": true,
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
-    "declarationDir": "./lib/types"
+    "declarationDir": "./lib/types",
+    "allowJs": true,
+    "checkJs": true
   },
   "include": ["src", "test", "examples", "demo"]
 }
