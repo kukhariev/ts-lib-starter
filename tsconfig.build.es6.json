@@ -2,7 +2,13 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "module": "esnext",
-    "outDir": "./lib/module"
+    "outDir": "./lib/module",
+    "plugins": [
+      {
+        "transform": "@zoltu/typescript-transformer-append-js-extension/output/index.js",
+        "after": true
+      }
+    ]
   },
   "include": ["src"],
   "exclude": ["**/*.spec.ts", "**/*.test.ts", "**/__*__"]
