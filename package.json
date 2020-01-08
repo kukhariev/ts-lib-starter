@@ -38,7 +38,7 @@
     "rimraf": "3.0.0",
     "ts-jest": "24.3.0",
     "ts-node-dev": "1.0.0-pre.44",
-    "ttypescript": "1.5.9",
+    "ttypescript": "1.5.10",
     "typescript": "3.7.4"
   },
   "jest": {
