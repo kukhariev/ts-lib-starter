@@ -39,7 +39,7 @@
     "ts-jest": "25.2.1",
     "ts-node-dev": "1.0.0-pre.44",
     "ttypescript": "1.5.10",
-    "typescript": "3.7.5"
+    "typescript": "3.8.2"
   },
   "jest": {
     "preset": "ts-jest",
