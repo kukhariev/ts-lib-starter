@@ -24,7 +24,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "26.0.19",
+    "@types/jest": "26.0.20",
     "@types/node": "10.17.50",
     "@types/rimraf": "3.0.0",
     "@typescript-eslint/eslint-plugin": "4.12.0",
