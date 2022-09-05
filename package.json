@@ -1,6 +1,6 @@
 {
   "name": "ts-lib-starter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Start Node.js / ECMAScript 6 module with TypeScript",
   "main": "lib/main/index.js",
   "module": "lib/module/index.js",
@@ -9,7 +9,7 @@
     "lib/**/*"
   ],
   "engines": {
-    "node": ">=10.10.0"
+    "node": ">=14.18.20"
   },
   "scripts": {
     "build": "npm run build:main && npm run build:es6",
@@ -25,7 +25,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "27.5.2",
-    "@types/node": "10.17.60",
+    "@types/node": "14.18.26",
     "@types/rimraf": "3.0.2",
     "@typescript-eslint/eslint-plugin": "5.36.2",
     "@typescript-eslint/parser": "5.36.2",
