@@ -16,7 +16,7 @@
     "build:main": "rimraf lib/main && tsc -p tsconfig.build.json",
     "build:es6": "rimraf lib/module && ttsc -p tsconfig.build.es6.json",
     "lint": "eslint \"{src,test,examples,demo}/**/*.{ts,js}\" --fix",
-    "test": "jest"
+    "test": "mocha"
   },
   "author": {
     "name": "kukhariev",
@@ -24,26 +24,29 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "27.5.2",
+    "@types/chai": "4.3.3",
+    "@types/mocha": "9.1.1",
     "@types/node": "14.18.28",
     "@types/rimraf": "3.0.2",
     "@typescript-eslint/eslint-plugin": "5.37.0",
     "@typescript-eslint/parser": "5.37.0",
     "@zoltu/typescript-transformer-append-js-extension": "1.0.1",
+    "chai": "4.3.6",
     "eslint": "8.23.1",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
-    "jest": "27.5.1",
+    "mocha": "9.2.2",
     "prettier": "2.7.1",
     "rimraf": "3.0.2",
-    "ts-jest": "27.1.5",
     "ts-node-dev": "2.0.0",
     "ttypescript": "1.5.13",
     "typescript": "4.7.4"
   },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node",
-    "collectCoverage": true
+  "mocha": {
+    "extension": [
+      "ts"
+    ],
+    "spec": "**/*.spec.ts",
+    "require": "ts-node/register"
   }
 }
