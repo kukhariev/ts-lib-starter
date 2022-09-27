@@ -1,7 +1,0 @@
-{
-  "extends": ["config:js-lib", "helpers:disableTypesNodeMajor"],
-  "automerge": true,
-  "major": {
-    "automerge": false
-  }
-}
