@@ -1,31 +1,15 @@
 {
-  "compileOnSave": true,
   "compilerOptions": {
+    "strict": true,
     "module": "commonjs",
-    "outDir": "./lib/main",
-    "baseUrl": "src",
-    "target": "es2017",
+    "target": "es2020",
     "moduleResolution": "node",
     "declaration": true,
-    "strict": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": false,
-    "noImplicitReturns": true,
-    "strictNullChecks": true,
-    "strictBindCallApply": true,
-    "noFallthroughCasesInSwitch": true,
-    "experimentalDecorators": true,
-    "resolveJsonModule": true,
-    "stripInternal": true,
-    "keyofStringsOnly": true,
-    "strictFunctionTypes": true,
-    "strictPropertyInitialization": true,
-    "declarationDir": "./lib/types",
-    "allowJs": true,
-    "checkJs": true
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["ES2020"],
+    "types": ["node", "mocha"]
   },
-  "include": ["src", "test", "examples", "demo"]
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
 }
