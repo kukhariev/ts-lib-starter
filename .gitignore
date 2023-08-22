@@ -37,7 +37,3 @@ Thumbs.db
 # temp files
 /tmp
 /temp
-
-#lock files
-package-lock.json
-yarn.lock
